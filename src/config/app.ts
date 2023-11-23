@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import { errorHandler } from '../middlewares/error'
+import { errorHandler } from '../middlewares/error.middleware'
 import router from '../routes'
 
 const app = express()
