@@ -1,9 +1,17 @@
 import { Request, Response, NextFunction } from "express"
-import ProductService from "../grpc/ProductService"
+import ProductServiceCnn from "../grpc/ProductServiceCnn"
+import Balancer from "../balancing/Balancer"
 
 export const getProducts = async (req: Request, res: Response, next: NextFunction) => {
-    const microservice = new ProductService('localhost:4000')
+    /* const microservice = new ProductService('localhost:4000')
     const response = await microservice.readProducts()
-    res.json(response)
+    res.json(response) */
+
+    // inicia un nuevo hilo
+    const balancer = new Balancer()
+    await balancer.firstConnection()
+    balancer.setTable()
+    balancer.printLogs()
+    res.end()
 }
 

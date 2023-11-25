@@ -3,12 +3,15 @@ import path from 'path'
 import proto from '@grpc/proto-loader' */
 
 const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
-// componente acoplado para generar varios microservicios en base al mismo archivo proto
-class ProductService {
+
+// componente acoplado para generar una conexion a un especifico microservicio
+class ProductServiceCnn {
     public url: string
     private freeRam: number = 0
     private freeCpu: number = 0
     private error: boolean = false
+    private processes: number = 0
+    private time: number = 0
 
     constructor(url: string){
         this.url = url
@@ -69,6 +72,22 @@ class ProductService {
     public getError(){
         return this.error
     }
+
+    public setProcesses(processes: number){
+        this.processes = processes
+    }
+
+    public getProcesses(){
+        return this.processes
+    }
+
+    public setTime(time: number){
+        this.time = time
+    }
+
+    public getTime(){
+        return this.time
+    }
 }
 
-export default ProductService
+export default ProductServiceCnn
