@@ -1,12 +1,15 @@
 import path from 'path'
-/* import grpc from '@grpc/grpc-js'
-import proto from '@grpc/proto-loader' */
-
 const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
+
+interface Product {
+    description: string,
+    id: number
+}
 
 // componente acoplado para generar una conexion a un especifico microservicio
 class ProductServiceCnn {
     public url: string
+    private products: Product[] = []
     private freeRam: number = 0
     private freeCpu: number = 0
     private error: boolean = false
@@ -26,6 +29,8 @@ class ProductServiceCnn {
                     throw new Error('Service failed')
                 } 
                 
+                this.setProducts(response.products)
+
                 // actualizando datos actuales de rendimiento
                 const { cpu, ram, error } = response.performance
                 this.setFreeCpu(cpu)
@@ -47,6 +52,14 @@ class ProductServiceCnn {
         const credentials = grpc.credentials.createInsecure()
         const client = new packageObject['ProductService'](this.url, credentials)
         return client
+    }
+
+    public setProducts(products: Product[]){
+        this.products = products
+    }
+
+    public getProducts(){
+        return this.products
     }
 
     public setFreeRam(freeRam: number){
