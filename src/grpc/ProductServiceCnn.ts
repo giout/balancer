@@ -5,6 +5,7 @@ const protoFilePath = path.join(__dirname, 'proto/ProductService.proto')
 
 // componente acoplado para generar una conexion a un especifico microservicio
 class ProductServiceCnn {
+    public name: string
     public url: string
     private products: Product[] = []
     private freeRam: number = 0
@@ -13,7 +14,8 @@ class ProductServiceCnn {
     private processes: number = 0
     private time: number = 0
 
-    constructor(url: string){
+    constructor(name: string, url: string){
+        this.name = name
         this.url = url
     }
 

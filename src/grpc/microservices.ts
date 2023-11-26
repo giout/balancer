@@ -2,9 +2,9 @@ import 'dotenv/config'
 import ProductServiceCnn from "./ProductServiceCnn"
 
 // se inicializa una conexion para 3 microservicios, estos objetos son globales
-export const m1 = new ProductServiceCnn(<string> process.env.M1)
-export const m2 = new ProductServiceCnn(<string> process.env.M2)
-export const m3 = new ProductServiceCnn(<string> process.env.M3)
+export const m1 = new ProductServiceCnn('m1', <string> process.env.M1)
+export const m2 = new ProductServiceCnn('m2', <string> process.env.M2)
+export const m3 = new ProductServiceCnn('m3', <string> process.env.M3)
 
 export const printLogs = () => {
     console.log('--------------------------------------------------')

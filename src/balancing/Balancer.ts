@@ -1,5 +1,4 @@
 import 'dotenv/config'
-import ProductServiceCnn from "../grpc/ProductServiceCnn"
 import { Worker } from 'worker_threads'
 
 class Balancer {
