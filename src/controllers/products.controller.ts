@@ -9,9 +9,6 @@ export const getProducts = async (req: Request, res: Response, next: NextFunctio
 
     // inicia un nuevo hilo
     const balancer = new Balancer()
-    await balancer.firstConnection()
-    balancer.setTable()
-    balancer.printLogs()
     res.end()
 }
 

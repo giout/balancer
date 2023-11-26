@@ -1,6 +1,6 @@
 import { Product } from "./service"
 
-export interface PerformanceData {
+/* export interface PerformanceData {
     name: string,
     freeRam: number,
     freeCpu: number,
@@ -12,4 +12,4 @@ export interface PerformanceData {
 export interface ThreadResponse {
     performance: PerformanceData,
     data: Product[]
-}
+} */
