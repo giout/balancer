@@ -3,7 +3,7 @@ import ProductServiceCnn from "../grpc/ProductServiceCnn"
 import { PerformanceData } from '../types/balancer'
 
 class Balancer {
-    table: Map<string, PerformanceData> = new Map()
+    table: PerformanceData[] = []
     m1: ProductServiceCnn
     m2: ProductServiceCnn
     m3: ProductServiceCnn
@@ -26,7 +26,8 @@ class Balancer {
     }
     
     setTable(){
-        this.table.set('m1', {
+        this.table.push({
+            name: 'm1',
             freeRam: this.m1.getFreeRam(), 
             freeCpu: this.m1.getFreeCpu(), 
             processes: this.m1.getProcesses(), 
@@ -34,7 +35,8 @@ class Balancer {
             error: this.m1.getError()
         })
         
-        this.table.set('m2', {
+        this.table.push({
+            name: 'm2',
             freeRam: this.m2.getFreeRam(), 
             freeCpu: this.m2.getFreeCpu(), 
             processes: this.m2.getProcesses(), 
@@ -42,7 +44,8 @@ class Balancer {
             error: this.m2.getError()
         })
         
-        this.table.set('m3', {
+        this.table.push({
+            name: 'm3',
             freeRam: this.m3.getFreeRam(), 
             freeCpu: this.m3.getFreeCpu(), 
             processes: this.m3.getProcesses(), 

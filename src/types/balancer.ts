@@ -1,6 +1,7 @@
 import { ServiceResponse } from "./service"
 
 export interface PerformanceData {
+    name: string,
     freeRam: number,
     freeCpu: number,
     processes: number,
