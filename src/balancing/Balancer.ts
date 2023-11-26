@@ -53,26 +53,32 @@ class Balancer {
     
     printLogs(){
         console.log('--------------------------------------------------')
-        console.log(`Servicio 1\n
-                    Ram libre -> ${this.m1.getFreeRam()}GB\n
-                    Cpu libre -> ${this.m1.getFreeCpu()}%\n
-                    Procesos -> ${this.m1.getProcesses()}\n
-                    Tiempo de respuesta -> ${this.m1.getTime()}\n
-                    Error -> ${this.m1.getError()}`)
+        console.log(`Servicio 1`)
         console.log('--------------------------------------------------')
-        console.log(`Servicio 2\n
-                    Ram libre -> ${this.m2.getFreeRam()}GB\n
-                    Cpu libre -> ${this.m2.getFreeCpu()}%\n
-                    Procesos -> ${this.m2.getProcesses()}\n
-                    Tiempo de respuesta -> ${this.m2.getTime()}\n
-                    Error -> ${this.m2.getError()}`)
+        console.log(`
+        Ram libre -> ${this.m1.getFreeRam()}GB\n
+        Cpu libre -> ${this.m1.getFreeCpu()}%\n
+        Procesos -> ${this.m1.getProcesses()}\n
+        Tiempo de respuesta -> ${this.m1.getTime()}\n
+        Error -> ${this.m1.getError()}`)
         console.log('--------------------------------------------------')
-        console.log(`Servicio 3\n
-                    Ram libre -> ${this.m3.getFreeRam()}GB\n
-                    Cpu libre -> ${this.m3.getFreeCpu()}%\n
-                    Procesos -> ${this.m3.getProcesses()}\n
-                    Tiempo de respuesta -> ${this.m3.getTime()}\n
-                    Error -> ${this.m3.getError()}`)
+        console.log(`Servicio 2`)
+        console.log('--------------------------------------------------')
+        console.log(`
+        Ram libre -> ${this.m2.getFreeRam()}GB\n
+        Cpu libre -> ${this.m2.getFreeCpu()}%\n
+        Procesos -> ${this.m2.getProcesses()}\n
+        Tiempo de respuesta -> ${this.m2.getTime()}\n
+        Error -> ${this.m2.getError()}`)
+        console.log('--------------------------------------------------')
+        console.log(`Servicio 3`)
+        console.log('--------------------------------------------------')
+        console.log(`
+        Ram libre -> ${this.m3.getFreeRam()}GB\n
+        Cpu libre -> ${this.m3.getFreeCpu()}%\n
+        Procesos -> ${this.m3.getProcesses()}\n
+        Tiempo de respuesta -> ${this.m3.getTime()}\n
+        Error -> ${this.m3.getError()}`)
         console.log('--------------------------------------------------')
     }
 
