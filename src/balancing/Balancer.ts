@@ -1,6 +1,7 @@
 import 'dotenv/config'
 import ProductServiceCnn from "../grpc/ProductServiceCnn"
 import { PerformanceData } from '../types/balancer'
+import { Worker } from 'worker_threads'
 
 class Balancer {
     table: PerformanceData[] = []
@@ -19,10 +20,9 @@ class Balancer {
 
     // el balanceador procede a elegir el microservicio y devolver los datos
     call(){
-        // inicia hilo y le pasa la tabla como parametro
-        // el hilo elige un microservicio
-        // hace la llamada a ese microservicio
-        // devuelve la respuesta de ese microservicio, junto con el nombre del mismo (ThreadResponse)
+        // inicia hilo 
+        const thread = new Worker('./thread')
+        thread.postMessage(this.table)
     }
     
     setTable(){

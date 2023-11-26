@@ -1,4 +1,4 @@
-import { ServiceResponse } from "./service"
+import { Product } from "./service"
 
 export interface PerformanceData {
     name: string,
@@ -10,6 +10,6 @@ export interface PerformanceData {
 }
 
 export interface ThreadResponse {
-    name: string
-    response: ServiceResponse
+    performance: PerformanceData,
+    data: Product[]
 }
