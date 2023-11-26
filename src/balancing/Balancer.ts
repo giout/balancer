@@ -1,16 +1,9 @@
 import 'dotenv/config'
 import ProductServiceCnn from "../grpc/ProductServiceCnn"
-
-interface performanceData {
-    freeRam: number,
-    freeCpu: number,
-    processes: number,
-    time: number,
-    error: boolean
-}
+import { PerformanceData } from '../types/balancer'
 
 class Balancer {
-    table: Map<string, performanceData> = new Map()
+    table: Map<string, PerformanceData> = new Map()
     m1: ProductServiceCnn
     m2: ProductServiceCnn
     m3: ProductServiceCnn
@@ -26,7 +19,10 @@ class Balancer {
 
     // el balanceador procede a elegir el microservicio y devolver los datos
     call(){
-
+        // inicia hilo y le pasa la tabla como parametro
+        // el hilo elige un microservicio
+        // hace la llamada a ese microservicio
+        // devuelve la respuesta de ese microservicio, junto con el nombre del mismo (ThreadResponse)
     }
     
     setTable(){

@@ -1,10 +1,7 @@
 import path from 'path'
-const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
+import { Product, ServiceResponse } from '../types/service'
 
-interface Product {
-    description: string,
-    id: number
-}
+const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
 
 // componente acoplado para generar una conexion a un especifico microservicio
 class ProductServiceCnn {
@@ -24,7 +21,7 @@ class ProductServiceCnn {
     public readProducts(){
         const client = this.newGrpcClient()
         return new Promise((resolve, reject)=>{
-            client.readProducts({}, (err: any, response: any) => {
+            client.readProducts({}, (err: Error, response: ServiceResponse) => {
                 if (err) {
                     throw new Error('Service failed')
                 } 
