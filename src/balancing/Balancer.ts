@@ -1,5 +1,7 @@
 import 'dotenv/config'
 import { Worker } from 'worker_threads'
+import { m1, m2, m3 } from '../grpc/microservices'
+import path from 'path'
 
 class Balancer {
     constructor(){
@@ -7,11 +9,14 @@ class Balancer {
     }   
 
     // el balanceador procede a elegir el microservicio y devolver los datos
-    call(){
+    async call(){
+        await m1.readProducts()
+        await m2.readProducts()
+        await m3.readProducts()
         // inicia hilo 
-        const thread = new Worker('./thread')
-        /* thread.postMessage()
-        thread.on('message', () => {
+        const thread = new Worker(path.join(__dirname, 'thread.js'))
+        thread.postMessage('')
+        /* thread.on('message', () => {
 
         }) */
     }
