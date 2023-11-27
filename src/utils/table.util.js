@@ -14,6 +14,23 @@ const getService = (name) => {
     return obj[name]
 }
 
+const addProcess = (name) => {
+    const obj = fileToObj()
+    obj[name].processes++
+    setTable(obj)
+}
+
+const removeProcess = (name) => {
+    const obj = fileToObj()
+    obj[name].processes--
+    setTable(obj)
+}
+
+const getProcesses = (name) => {
+    const obj = fileToObj()
+    return obj[name].processes
+}
+
 const setTable = (data) => {
     objToFile(data)
 }   
@@ -24,9 +41,9 @@ const getTable = () => {
 
 const restartTable = () => {
     setTable({
-        m1: { ram: 0, cpu: 0, processes: 0, time: 0, error: false },
-        m2: { ram: 0, cpu: 0, processes: 0, time: 0, error: false },
-        m3: { ram: 0, cpu: 0, processes: 0, time: 0, error: false }
+        m1: { ram: 0, cpu: 0, processes: 0, time: 0 },
+        m2: { ram: 0, cpu: 0, processes: 0, time: 0 },
+        m3: { ram: 0, cpu: 0, processes: 0, time: 0 }
     })
 }
 
@@ -47,5 +64,8 @@ module.exports = {
     getService,
     setTable,
     getTable,
-    restartTable
+    restartTable,
+    addProcess,
+    removeProcess,
+    getProcesses
 }

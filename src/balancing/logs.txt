@@ -2,26 +2,449 @@
 
 m1
 ------------------------------------------------
-RAM disponible -> 2.2465362548828125
-CPU disponible -> 76.53999999999999
-Cantidad de procesos -> 0
-Tiempo de respuesta -> 0
+RAM disponible -> 2.273639678955078
+CPU disponible -> 52.1
+Cantidad de procesos -> 49
+Tiempo de respuesta -> 15693
 ------------------------------------------------
 
 
 m1
 ------------------------------------------------
-RAM disponible -> 1.7659111022949219
-CPU disponible -> 76.63
-Cantidad de procesos -> 0
-Tiempo de respuesta -> 0
+RAM disponible -> 2.273639678955078
+CPU disponible -> 52.48
+Cantidad de procesos -> 48
+Tiempo de respuesta -> 16460
 ------------------------------------------------
 
 
 m1
 ------------------------------------------------
-RAM disponible -> 2.1379432678222656
-CPU disponible -> 76.97
+RAM disponible -> 2.2739219665527344
+CPU disponible -> 50.77
+Cantidad de procesos -> 47
+Tiempo de respuesta -> 18091
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.273895263671875
+CPU disponible -> 51.54
+Cantidad de procesos -> 46
+Tiempo de respuesta -> 13620
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.273029327392578
+CPU disponible -> 50.77
+Cantidad de procesos -> 45
+Tiempo de respuesta -> 17307
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2807540893554688
+CPU disponible -> 50.98
+Cantidad de procesos -> 44
+Tiempo de respuesta -> 16338
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2807655334472656
+CPU disponible -> 50.98
+Cantidad de procesos -> 43
+Tiempo de respuesta -> 16027
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2718544006347656
+CPU disponible -> 53.04
+Cantidad de procesos -> 42
+Tiempo de respuesta -> 17193
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2678909301757812
+CPU disponible -> 52.31
+Cantidad de procesos -> 41
+Tiempo de respuesta -> 16550
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.26611328125
+CPU disponible -> 51.5
+Cantidad de procesos -> 40
+Tiempo de respuesta -> 15418
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2641830444335938
+CPU disponible -> 50.73
+Cantidad de procesos -> 39
+Tiempo de respuesta -> 14111
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.263538360595703
+CPU disponible -> 50.73
+Cantidad de procesos -> 38
+Tiempo de respuesta -> 18502
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.262401580810547
+CPU disponible -> 48.83
+Cantidad de procesos -> 37
+Tiempo de respuesta -> 16114
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2623367309570312
+CPU disponible -> 50
+Cantidad de procesos -> 36
+Tiempo de respuesta -> 16951
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.262287139892578
+CPU disponible -> 49.99
+Cantidad de procesos -> 35
+Tiempo de respuesta -> 16021
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2697105407714844
+CPU disponible -> 49.23
+Cantidad de procesos -> 34
+Tiempo de respuesta -> 12786
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.27435302734375
+CPU disponible -> 49.23
+Cantidad de procesos -> 33
+Tiempo de respuesta -> 18742
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289592742919922
+CPU disponible -> 47.34
+Cantidad de procesos -> 32
+Tiempo de respuesta -> 14509
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289592742919922
+CPU disponible -> 45.41
+Cantidad de procesos -> 31
+Tiempo de respuesta -> 17364
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289592742919922
+CPU disponible -> 45.52
+Cantidad de procesos -> 30
+Tiempo de respuesta -> 17953
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289592742919922
+CPU disponible -> 45.41
+Cantidad de procesos -> 29
+Tiempo de respuesta -> 16673
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896461486816406
+CPU disponible -> 44.81
+Cantidad de procesos -> 28
+Tiempo de respuesta -> 14993
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896766662597656
+CPU disponible -> 41.36
+Cantidad de procesos -> 27
+Tiempo de respuesta -> 18848
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896957397460938
+CPU disponible -> 39.47
+Cantidad de procesos -> 26
+Tiempo de respuesta -> 15715
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896995544433594
+CPU disponible -> 39.1
+Cantidad de procesos -> 25
+Tiempo de respuesta -> 18211
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896690368652344
+CPU disponible -> 36.01
+Cantidad de procesos -> 24
+Tiempo de respuesta -> 17490
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2896690368652344
+CPU disponible -> 36.01
+Cantidad de procesos -> 23
+Tiempo de respuesta -> 16217
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289691925048828
+CPU disponible -> 35.019999999999996
+Cantidad de procesos -> 22
+Tiempo de respuesta -> 19059
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2892913818359375
+CPU disponible -> 34.86
+Cantidad de procesos -> 21
+Tiempo de respuesta -> 13773
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.289379119873047
+CPU disponible -> 34.86
+Cantidad de procesos -> 20
+Tiempo de respuesta -> 18694
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.288227081298828
+CPU disponible -> 34.209999999999994
+Cantidad de procesos -> 19
+Tiempo de respuesta -> 19153
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.28790283203125
+CPU disponible -> 33.69
+Cantidad de procesos -> 18
+Tiempo de respuesta -> 18576
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.28826904296875
+CPU disponible -> 31.900000000000006
+Cantidad de procesos -> 17
+Tiempo de respuesta -> 18043
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2767486572265625
+CPU disponible -> 24.790000000000006
+Cantidad de procesos -> 16
+Tiempo de respuesta -> 14300
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2769012451171875
+CPU disponible -> 23.64
+Cantidad de procesos -> 15
+Tiempo de respuesta -> 19280
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.27880859375
+CPU disponible -> 23.659999999999997
+Cantidad de procesos -> 14
+Tiempo de respuesta -> 15624
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2787551879882812
+CPU disponible -> 24.049999999999997
+Cantidad de procesos -> 13
+Tiempo de respuesta -> 19388
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2787551879882812
+CPU disponible -> 24.14
+Cantidad de procesos -> 12
+Tiempo de respuesta -> 18144
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2788124084472656
+CPU disponible -> 23.340000000000003
+Cantidad de procesos -> 11
+Tiempo de respuesta -> 17500
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2788124084472656
+CPU disponible -> 23.340000000000003
+Cantidad de procesos -> 10
+Tiempo de respuesta -> 19392
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.279743194580078
+CPU disponible -> 20.549999999999997
+Cantidad de procesos -> 9
+Tiempo de respuesta -> 15395
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.279804229736328
+CPU disponible -> 20.540000000000006
+Cantidad de procesos -> 8
+Tiempo de respuesta -> 14656
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2798614501953125
+CPU disponible -> 20.540000000000006
+Cantidad de procesos -> 7
+Tiempo de respuesta -> 19151
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.283893585205078
+CPU disponible -> 18.620000000000005
+Cantidad de procesos -> 6
+Tiempo de respuesta -> 18669
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.283893585205078
+CPU disponible -> 18.33
+Cantidad de procesos -> 5
+Tiempo de respuesta -> 14453
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2849349975585938
+CPU disponible -> 18.590000000000003
+Cantidad de procesos -> 4
+Tiempo de respuesta -> 18564
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2833251953125
+CPU disponible -> 18.590000000000003
+Cantidad de procesos -> 3
+Tiempo de respuesta -> 19161
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2846755981445312
+CPU disponible -> 18.590000000000003
+Cantidad de procesos -> 2
+Tiempo de respuesta -> 19271
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.2801170349121094
+CPU disponible -> 18.200000000000003
+Cantidad de procesos -> 1
+Tiempo de respuesta -> 17850
+------------------------------------------------
+
+
+m1
+------------------------------------------------
+RAM disponible -> 2.279987335205078
+CPU disponible -> 18.200000000000003
 Cantidad de procesos -> 0
-Tiempo de respuesta -> 0
+Tiempo de respuesta -> 16121
 ------------------------------------------------
