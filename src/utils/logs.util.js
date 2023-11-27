@@ -9,10 +9,10 @@ const addLog = (name, data) => {
     const newContent = `\n
 ${name}
 ------------------------------------------------
-RAM disponible -> ${data.ram}
-CPU disponible -> ${data.cpu}
+RAM disponible -> ${data.ram}GB
+CPU disponible -> ${data.cpu}%
 Cantidad de procesos -> ${data.processes}
-Tiempo de respuesta -> ${data.time}
+Tiempo de respuesta -> ${data.time}ms
 ------------------------------------------------
 `
 

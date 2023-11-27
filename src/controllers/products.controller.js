@@ -7,10 +7,13 @@ const CustomError = require('../utils/error.util')
 const getProducts = async (req, res, next) => {
     try {
         // se elige el microservicio
+
+
+        
         // se inicia el proceso
         let initial = new Date().getTime()
         addProcess('m1')
-        
+
         // se inicia el worker        
         const worker = new Worker(path.join(__dirname, '../balancing/worker.js'))
         worker.postMessage('')
