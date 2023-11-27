@@ -4,12 +4,15 @@ const { addProcess, removeProcess, getProcesses, setService } = require('../util
 const { addLog } = require('../utils/logs.util')
 const CustomError = require('../utils/error.util')
 
+let requests = 0
+
 const getProducts = async (req, res, next) => {
-    try {
+    try {   
+        requests++
+        const requestNumber = requests
+        
         // se elige el microservicio
 
-
-        
         // se inicia el proceso
         let initial = new Date().getTime()
         addProcess('m1')
@@ -36,7 +39,7 @@ const getProducts = async (req, res, next) => {
             }
 
             // se imprime el log
-            addLog('m1', data)
+            addLog(requestNumber, 'm1', data)
 
             // se actualiza la tabla
             setService('m1', data)
@@ -46,7 +49,6 @@ const getProducts = async (req, res, next) => {
     } catch (e) {
         next(e)
     }
-    
 }
 
 module.exports = {

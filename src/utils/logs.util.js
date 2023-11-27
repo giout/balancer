@@ -3,11 +3,11 @@ const fs = require('fs')
 const path = require('path')
 const filePath = path.join(__dirname, '../balancing/logs.txt')
 
-const addLog = (name, data) => {
+const addLog = (request, service, data) => {
     const content = fs.readFileSync(filePath, 'utf-8')
 
     const newContent = `\n
-${name}
+Solicitud ${request} -> ${service}
 ------------------------------------------------
 RAM disponible -> ${data.ram}GB
 CPU disponible -> ${data.cpu}%
