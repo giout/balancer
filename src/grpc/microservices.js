@@ -1,12 +1,12 @@
-import 'dotenv/config'
-import ProductServiceCnn from "./ProductServiceCnn"
+require('dotenv/config.js')
+const ProductServiceCnn = require("./ProductServiceCnn.js")
 
 // se inicializa una conexion para 3 microservicios, estos objetos son globales
-export const m1 = new ProductServiceCnn('m1', <string> process.env.M1)
-export const m2 = new ProductServiceCnn('m2', <string> process.env.M2)
-export const m3 = new ProductServiceCnn('m3', <string> process.env.M3)
+const m1 = new ProductServiceCnn('m1', process.env.M1)
+const m2 = new ProductServiceCnn('m2', process.env.M2)
+const m3 = new ProductServiceCnn('m3', process.env.M3)
 
-export const printLogs = () => {
+const printLogs = () => {
     console.log('--------------------------------------------------')
     console.log(`Servicio 1`)
     console.log('--------------------------------------------------')
@@ -35,4 +35,11 @@ export const printLogs = () => {
     Tiempo de respuesta -> ${m3.getTime()}\n
     Error -> ${m3.getError()}`)
     console.log('--------------------------------------------------')
+}
+
+module.exports = {
+    m1, 
+    m2,
+    m3,
+    printLogs
 }

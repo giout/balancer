@@ -1,5 +1,5 @@
 const { parentPort } = require('worker_threads')
-const { m1, m2, m3 } = require('../grpc/microservices')
+const { m1, m2, m3 } = require('../grpc/microservices.js')
 
 if (parentPort)
 parentPort.on('message', ()=>{
@@ -15,10 +15,22 @@ parentPort.on('message', ()=>{
 
 const chooseMicroservice = () => {
     // se comparan los valores de todos los microservicios y se obtienen los maximos
+
+    console.log(m1.getFreeRam())
+    console.log(m1.getFreeCpu())
+    console.log(m1.getTime())
+    console.log(m1.getProcesses())
+
+
     const maxRam = Math.max(m1.getFreeRam(), m2.getFreeRam(), m3.getFreeRam())
     const maxCpu = Math.max(m1.getFreeCpu(), m2.getFreeCpu(), m3.getFreeCpu())
     const minTime = Math.min(m1.getTime(), m2.getTime(), m3.getTime())
     const minProcesses = Math.min(m1.getProcesses(), m2.getProcesses(), m3.getProcesses())                              
+
+    console.log('ram -> ', maxRam)
+    console.log('cpu -> ', maxCpu)
+    console.log('time -> ', minTime)
+    console.log('processes -> ', minProcesses)
 
     // contadores de puntos
     let m1Pts = 0

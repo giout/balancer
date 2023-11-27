@@ -1,7 +1,6 @@
-import { NextFunction, Request, Response } from "express"
-import CustomError from "../utils/error.util"
+const CustomError = require("../utils/error.util.js")
 
-export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
+const errorHandler = (err, req, res, next) => {
     console.log(err)
     
     if (err instanceof CustomError) {
@@ -9,4 +8,8 @@ export const errorHandler = (err: Error, req: Request, res: Response, next: Next
     }
 
     res.status(500).json({ msg: "Internal server error." })
+}
+
+module.exports = {
+    errorHandler
 }

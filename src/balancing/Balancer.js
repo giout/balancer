@@ -1,7 +1,7 @@
-import 'dotenv/config'
-import { Worker } from 'worker_threads'
-import { m1, m2, m3 } from '../grpc/microservices'
-import path from 'path'
+require('dotenv/config.js')
+const { Worker } = require('worker_threads')
+const { m1, m2, m3 } = require('../grpc/microservices.js')
+const path = require('path')
 
 class Balancer {
     constructor(){
@@ -13,6 +13,7 @@ class Balancer {
         await m1.readProducts()
         await m2.readProducts()
         await m3.readProducts()
+        
         // inicia hilo 
         const thread = new Worker(path.join(__dirname, 'thread.js'))
         thread.postMessage('')
@@ -22,4 +23,4 @@ class Balancer {
     }
 }
 
-export default Balancer
+module.exports = Balancer

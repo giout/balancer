@@ -1,8 +1,7 @@
-import { Request, Response, NextFunction } from "express"
-import ProductServiceCnn from "../grpc/ProductServiceCnn"
-import Balancer from "../balancing/Balancer"
+const ProductServiceCnn = require("../grpc/ProductServiceCnn.js")
+const Balancer = require("../balancing/Balancer.js")
 
-export const getProducts = async (req: Request, res: Response, next: NextFunction) => {
+const getProducts = async (req, res, next) => {
     /* const microservice = new ProductService('localhost:4000')
     const response = await microservice.readProducts()
     res.json(response) */
@@ -13,3 +12,6 @@ export const getProducts = async (req: Request, res: Response, next: NextFunctio
     res.end()
 }
 
+module.exports = {
+    getProducts
+}

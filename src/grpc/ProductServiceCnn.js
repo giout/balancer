@@ -1,29 +1,24 @@
-import path from 'path'
-import { Product, ServiceResponse } from '../types/service'
+const path = require('path')
 
 const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
 
 // componente acoplado para generar una conexion a un especifico microservicio
 class ProductServiceCnn {
-    public name: string
-    public url: string
-    private products: Product[] = []
-    private freeRam: number = 0
-    private freeCpu: number = 0
-    private error: boolean = false
-    private processes: number = 0
-    private time: number = 0
-
-    constructor(name: string, url: string){
+    constructor(name, url){
         this.name = name
         this.url = url
+        this.freeRam = 0
+        this.freeCpu = 0 
+        this.time = 0
+        this.processes = 0 
+        this.error = false
     }
 
     // el metodo debe ser envuelto en una promesa para que devuelva los datos correctamente
-    public readProducts(){
+    readProducts(){
         const client = this.newGrpcClient()
         return new Promise((resolve, reject)=>{
-            client.readProducts({}, (err: Error, response: ServiceResponse) => {
+            client.readProducts({}, (err, response) => {
                 if (err) {
                     throw new Error('Service failed')
                 } 
@@ -41,7 +36,7 @@ class ProductServiceCnn {
         })
     }
 
-    private newGrpcClient(){
+    newGrpcClient(){
         const grpc = require('@grpc/grpc-js')
         const proto = require('@grpc/proto-loader')
         const protoFile = proto.loadSync(protoFilePath, {})
@@ -53,53 +48,53 @@ class ProductServiceCnn {
         return client
     }
 
-    public setProducts(products: Product[]){
+    setProducts(products){
         this.products = products
     }
 
-    public getProducts(){
+    getProducts(){
         return this.products
     }
 
-    public setFreeRam(freeRam: number){
+    setFreeRam(freeRam){
         this.freeRam = freeRam
     }
 
-    public getFreeRam(){
+    getFreeRam(){
         return this.freeRam
     }
 
-    public setFreeCpu(freeCpu: number){
+    setFreeCpu(freeCpu){
         this.freeCpu = freeCpu        
     }
 
-    public getFreeCpu(){
+    getFreeCpu(){
         return this.freeCpu
     }
 
-    public setError(error: boolean){
+    setError(error){
         this.error = error
     }
 
-    public getError(){
+    getError(){
         return this.error
     }
 
-    public setProcesses(processes: number){
+    setProcesses(processes){
         this.processes = processes
     }
 
-    public getProcesses(){
+    getProcesses(){
         return this.processes
     }
 
-    public setTime(time: number){
+    setTime(time){
         this.time = time
     }
 
-    public getTime(){
+    getTime(){
         return this.time
     }
 }
 
-export default ProductServiceCnn
+module.exports = ProductServiceCnn
