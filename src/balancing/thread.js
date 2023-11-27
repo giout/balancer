@@ -1,10 +1,8 @@
 const { parentPort } = require('worker_threads')
-const { m1, m2, m3 } = require('../grpc/microservices.js')
 
 if (parentPort)
 parentPort.on('message', ()=>{
     // el hilo elige un microservicio
-    chooseMicroservice()
     // añade proceso a variable de microservicio
     // inicia tiempo
     // hace la llamada a ese microservicio
@@ -12,15 +10,10 @@ parentPort.on('message', ()=>{
     // asigna tiempo
     // devuelve los datos de bd obtenidos, junto con el objeto PerformanceData perteneciente a dicho microservicio (ThreadResponse)
 })
-
-const chooseMicroservice = () => {
+/* 
+const chooseMicroservice = (m1, m2, m3) => {
     // se comparan los valores de todos los microservicios y se obtienen los maximos
-
-    console.log(m1.getFreeRam())
-    console.log(m1.getFreeCpu())
-    console.log(m1.getTime())
-    console.log(m1.getProcesses())
-
+    console.log(m1)
 
     const maxRam = Math.max(m1.getFreeRam(), m2.getFreeRam(), m3.getFreeRam())
     const maxCpu = Math.max(m1.getFreeCpu(), m2.getFreeCpu(), m3.getFreeCpu())
@@ -70,4 +63,4 @@ const chooseMicroservice = () => {
     console.log('Puntos m3 -> ', m3Pts)
 
     // se compara y elige el microservicio
-}
+} */

@@ -6,7 +6,7 @@ const m1 = new ProductServiceCnn('m1', process.env.M1)
 const m2 = new ProductServiceCnn('m2', process.env.M2)
 const m3 = new ProductServiceCnn('m3', process.env.M3)
 
-const printLogs = () => {
+/* const printLogs = () => {
     console.log('--------------------------------------------------')
     console.log(`Servicio 1`)
     console.log('--------------------------------------------------')
@@ -35,11 +35,11 @@ const printLogs = () => {
     Tiempo de respuesta -> ${m3.getTime()}\n
     Error -> ${m3.getError()}`)
     console.log('--------------------------------------------------')
-}
+} */
 
 module.exports = {
     m1, 
     m2,
-    m3,
-    printLogs
+    m3,/* 
+    printLogs */
 }

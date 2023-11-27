@@ -10,13 +10,9 @@ class Balancer {
 
     // el balanceador procede a elegir el microservicio y devolver los datos
     async call(){
-        await m1.readProducts()
-        await m2.readProducts()
-        await m3.readProducts()
-        
         // inicia hilo 
         const thread = new Worker(path.join(__dirname, 'thread.js'))
-        thread.postMessage('')
+        thread.postMessage()
         /* thread.on('message', () => {
 
         }) */
