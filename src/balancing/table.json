@@ -1,5 +1,5 @@
 {
-  "m1": { "ram": 1, "cpu": 0, "processes": 0, "time": 0, "error": false },
-  "m2": { "ram": 2, "cpu": 2, "processes": 0, "time": 0, "error": false },
+  "m1": { "ram": 0, "cpu": 0, "processes": 0, "time": 0, "error": false },
+  "m2": { "ram": 0, "cpu": 0, "processes": 0, "time": 0, "error": false },
   "m3": { "ram": 0, "cpu": 0, "processes": 0, "time": 0, "error": false }
 }
