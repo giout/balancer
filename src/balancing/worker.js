@@ -1,9 +1,7 @@
 const { parentPort } = require('worker_threads')
-const { getTable, setTable, setService, getService } = require('../utils/table.util.js')
-const { m1 } = require('../grpc/microservices.js')
-const { addLog } = require('../utils/logs.util.js')
+const services = require('../grpc/microservices.js')
 
-parentPort.on('message', async ()=>{
-    const data = await m1.readProducts()
+parentPort.on('message', async (service)=>{
+    const data = await services[service].readProducts()
     parentPort.postMessage(data)
 })

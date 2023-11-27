@@ -10,7 +10,7 @@ const getProducts = async (req, res, next) => {
     try {   
         requests++
         const requestNumber = requests
-        
+
         // se elige el microservicio
 
         // se inicia el proceso
@@ -19,7 +19,7 @@ const getProducts = async (req, res, next) => {
 
         // se inicia el worker        
         const worker = new Worker(path.join(__dirname, '../balancing/worker.js'))
-        worker.postMessage('')
+        worker.postMessage('m1')
 
         worker.on('message', (response) => {
             removeProcess('m1')

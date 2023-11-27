@@ -3,10 +3,28 @@ const fs = require('fs')
 const path = require('path')
 const filePath = path.join(__dirname, '../balancing/table.json')
 
+const chooseMicroservices = () => {
+    const table = fileToObj()
+    const points = { m1: 0, m2: 0, m3: 0 }
+
+    // se calculan los valores maximos
+    // mayor cantidad de ram libre
+    const maxRam = Math.max()
+
+    // mayor cantidad de cpu libre
+    
+
+    // menor cantidad de procesos
+    
+
+    // menor tiempo de respuesta
+
+}
+
 const setService = (name, data) => {
-    const obj = fileToObj()
-    obj[name] = data
-    objToFile(obj)
+    const table = fileToObj()
+    table[name] = data
+    objToFile(table)
 }
 
 const getService = (name) => {
@@ -15,20 +33,20 @@ const getService = (name) => {
 }
 
 const addProcess = (name) => {
-    const obj = fileToObj()
-    obj[name].processes++
-    setTable(obj)
+    const table = fileToObj()
+    table[name].processes++
+    setTable(table)
 }
 
 const removeProcess = (name) => {
-    const obj = fileToObj()
-    obj[name].processes--
-    setTable(obj)
+    const table = fileToObj()
+    table[name].processes--
+    setTable(table)
 }
 
 const getProcesses = (name) => {
-    const obj = fileToObj()
-    return obj[name].processes
+    const table = fileToObj()
+    return table[name].processes
 }
 
 const setTable = (data) => {
