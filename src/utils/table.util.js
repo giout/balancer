@@ -63,11 +63,6 @@ const setService = (name, data) => {
     table[name] = data
 }
 
-const getService = (name) => {
-    const obj = fileToObj()
-    return obj[name]
-}
-
 const addProcess = (name) => {
     table[name].processes++
 }
@@ -80,18 +75,8 @@ const getProcesses = (name) => {
     return table[name].processes
 }
 
-const restartTable = () => {
-    table = {
-        m1: { ram: 0, cpu: 0, processes: 0, time: 0 },
-        m2: { ram: 0, cpu: 0, processes: 0, time: 0 },
-        m3: { ram: 0, cpu: 0, processes: 0, time: 0 }
-    }
-}
-
 module.exports = {
     setService,
-    getService,
-    restartTable,
     addProcess,
     removeProcess,
     getProcesses,
