@@ -1,4 +1,4 @@
-// metodos para la escritura de archivos
+// metodos para la escritura del archivo log
 const fs = require('fs')
 const path = require('path')
 const filePath = path.join(__dirname, '../balancing/logs.txt')
@@ -10,7 +10,7 @@ const addLog = (request, service, data) => {
 Solicitud ${request} -> ${service}
 ------------------------------------------------
 RAM disponible -> ${data.ram}GB
-CPU disponible -> ${data.cpu}%
+Velocidad de procesamiento -> ${data.cpu}MHZ
 Cantidad de procesos -> ${data.processes}
 Tiempo de respuesta -> ${data.time}ms
 ------------------------------------------------

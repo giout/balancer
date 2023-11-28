@@ -3,22 +3,63 @@ const fs = require('fs')
 const path = require('path')
 const filePath = path.join(__dirname, '../balancing/table.json')
 
-const chooseMicroservices = () => {
+const chooseService = () => {
     const table = fileToObj()
     const points = { m1: 0, m2: 0, m3: 0 }
 
-    // se calculan los valores maximos
-    // mayor cantidad de ram libre
-    const maxRam = Math.max()
+    // se calculan los valores maximos/minimos
+    const maxRam = Math.max(
+        table['m1'].ram,
+        table['m2'].ram,
+        table['m3'].ram
+    )
 
-    // mayor cantidad de cpu libre
-    
+    const maxCpu = Math.max(
+        table['m1'].cpu,
+        table['m2'].cpu,
+        table['m3'].cpu
+    )
 
-    // menor cantidad de procesos
-    
+    const minProcesses = Math.min(
+        table['m1'].processes,
+        table['m2'].processes,
+        table['m3'].processes
+    )
 
-    // menor tiempo de respuesta
+    const minTime = Math.min(
+        table['m1'].time,
+        table['m2'].time,
+        table['m3'].time
+    )
 
+    // se agregan los puntos
+    for (const s of ['m1', 'm2', 'm3']) {
+        if (table[s].ram == maxRam) 
+            points[s] += 4
+
+        if (table[s].cpu == maxCpu){
+            points[s] += 3
+        }
+
+        if (table[s].processes == minProcesses){
+            points[s] += 5
+        }
+
+        if (table[s].time == minTime){
+            points[s] += 4
+        }
+    }
+
+    // se elige el que tenga mas puntos
+    const { m1, m2, m3 } = points
+    if (m1 >= m2 && m1 >= m3) 
+        return 'm1'
+
+    if (m2 > m1 && m2 >= m3) 
+        return 'm2'
+
+    if (m3 > m1 && m3 > m2) 
+        return 'm3'
 }
 
 const setService = (name, data) => {
@@ -85,5 +126,6 @@ module.exports = {
     restartTable,
     addProcess,
     removeProcess,
-    getProcesses
+    getProcesses,
+    chooseService
 }

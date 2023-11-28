@@ -1,99 +1,450 @@
 
 
+Solicitud 2 -> m2
+------------------------------------------------
+RAM disponible -> 0.6333847045898438GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 16
+Tiempo de respuesta -> 22085ms
+------------------------------------------------
+
+
+Solicitud 8 -> m2
+------------------------------------------------
+RAM disponible -> 0.6290626525878906GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 15
+Tiempo de respuesta -> 19132ms
+------------------------------------------------
+
+
 Solicitud 1 -> m1
 ------------------------------------------------
-RAM disponible -> 3.428424835205078GB
-CPU disponible -> 67.32%
-Cantidad de procesos -> 0
-Tiempo de respuesta -> 8622ms
-------------------------------------------------
-
-
-Solicitud 2 -> m1
-------------------------------------------------
-RAM disponible -> 3.163074493408203GB
-CPU disponible -> 51.76%
-Cantidad de procesos -> 9
-Tiempo de respuesta -> 4853ms
-------------------------------------------------
-
-
-Solicitud 5 -> m1
-------------------------------------------------
-RAM disponible -> 3.1629257202148438GB
-CPU disponible -> 50.98%
-Cantidad de procesos -> 8
-Tiempo de respuesta -> 4911ms
-------------------------------------------------
-
-
-Solicitud 6 -> m1
-------------------------------------------------
-RAM disponible -> 3.1601181030273438GB
-CPU disponible -> 50.17%
-Cantidad de procesos -> 7
-Tiempo de respuesta -> 4968ms
-------------------------------------------------
-
-
-Solicitud 3 -> m1
-------------------------------------------------
-RAM disponible -> 3.15814208984375GB
-CPU disponible -> 49.42%
-Cantidad de procesos -> 6
-Tiempo de respuesta -> 5062ms
-------------------------------------------------
-
-
-Solicitud 8 -> m1
-------------------------------------------------
-RAM disponible -> 3.1554794311523438GB
-CPU disponible -> 49.79%
-Cantidad de procesos -> 5
-Tiempo de respuesta -> 4897ms
-------------------------------------------------
-
-
-Solicitud 10 -> m1
-------------------------------------------------
-RAM disponible -> 3.144634246826172GB
-CPU disponible -> 50.18%
-Cantidad de procesos -> 4
-Tiempo de respuesta -> 4791ms
+RAM disponible -> 0.6290550231933594GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 16
+Tiempo de respuesta -> 22490ms
 ------------------------------------------------
 
 
 Solicitud 4 -> m1
 ------------------------------------------------
-RAM disponible -> 3.1429824829101562GB
-CPU disponible -> 49.06%
-Cantidad de procesos -> 3
-Tiempo de respuesta -> 5179ms
+RAM disponible -> 0.6290321350097656GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 15
+Tiempo de respuesta -> 21656ms
 ------------------------------------------------
 
 
-Solicitud 9 -> m1
+Solicitud 5 -> m2
 ------------------------------------------------
-RAM disponible -> 3.141864776611328GB
-CPU disponible -> 50.18%
-Cantidad de procesos -> 2
-Tiempo de respuesta -> 5011ms
+RAM disponible -> 0.6290321350097656GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 14
+Tiempo de respuesta -> 20620ms
 ------------------------------------------------
 
 
-Solicitud 11 -> m1
+Solicitud 6 -> m3
 ------------------------------------------------
-RAM disponible -> 3.141864776611328GB
-CPU disponible -> 50.18%
-Cantidad de procesos -> 1
-Tiempo de respuesta -> 4823ms
+RAM disponible -> 0.6290283203125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 15
+Tiempo de respuesta -> 19747ms
+------------------------------------------------
+
+
+Solicitud 3 -> m3
+------------------------------------------------
+RAM disponible -> 0.6351127624511719GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 14
+Tiempo de respuesta -> 22397ms
+------------------------------------------------
+
+
+Solicitud 10 -> m1
+------------------------------------------------
+RAM disponible -> 0.6357345581054688GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 14
+Tiempo de respuesta -> 18944ms
+------------------------------------------------
+
+
+Solicitud 9 -> m3
+------------------------------------------------
+RAM disponible -> 0.6363754272460938GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 13
+Tiempo de respuesta -> 19123ms
+------------------------------------------------
+
+
+Solicitud 11 -> m2
+------------------------------------------------
+RAM disponible -> 0.6293220520019531GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 13
+Tiempo de respuesta -> 18942ms
 ------------------------------------------------
 
 
 Solicitud 7 -> m1
 ------------------------------------------------
-RAM disponible -> 3.1419944763183594GB
-CPU disponible -> 52.89%
+RAM disponible -> 0.5916290283203125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 13
+Tiempo de respuesta -> 19985ms
+------------------------------------------------
+
+
+Solicitud 18 -> m3
+------------------------------------------------
+RAM disponible -> 0.5756645202636719GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 12
+Tiempo de respuesta -> 16311ms
+------------------------------------------------
+
+
+Solicitud 17 -> m2
+------------------------------------------------
+RAM disponible -> 0.5757980346679688GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 12
+Tiempo de respuesta -> 16501ms
+------------------------------------------------
+
+
+Solicitud 12 -> m3
+------------------------------------------------
+RAM disponible -> 0.5761947631835938GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 11
+Tiempo de respuesta -> 18561ms
+------------------------------------------------
+
+
+Solicitud 13 -> m1
+------------------------------------------------
+RAM disponible -> 0.5761947631835938GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 12
+Tiempo de respuesta -> 18545ms
+------------------------------------------------
+
+
+Solicitud 19 -> m1
+------------------------------------------------
+RAM disponible -> 0.5472373962402344GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 11
+Tiempo de respuesta -> 16282ms
+------------------------------------------------
+
+
+Solicitud 14 -> m2
+------------------------------------------------
+RAM disponible -> 0.5485076904296875GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 11
+Tiempo de respuesta -> 17863ms
+------------------------------------------------
+
+
+Solicitud 15 -> m3
+------------------------------------------------
+RAM disponible -> 0.5397605895996094GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 10
+Tiempo de respuesta -> 17783ms
+------------------------------------------------
+
+
+Solicitud 20 -> m2
+------------------------------------------------
+RAM disponible -> 0.5303535461425781GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 10
+Tiempo de respuesta -> 16000ms
+------------------------------------------------
+
+
+Solicitud 16 -> m1
+------------------------------------------------
+RAM disponible -> 0.5309104919433594GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 10
+Tiempo de respuesta -> 17720ms
+------------------------------------------------
+
+
+Solicitud 21 -> m3
+------------------------------------------------
+RAM disponible -> 0.5160865783691406GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 9
+Tiempo de respuesta -> 15102ms
+------------------------------------------------
+
+
+Solicitud 22 -> m1
+------------------------------------------------
+RAM disponible -> 0.4756126403808594GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 9
+Tiempo de respuesta -> 14739ms
+------------------------------------------------
+
+
+Solicitud 23 -> m2
+------------------------------------------------
+RAM disponible -> 0.4630470275878906GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 9
+Tiempo de respuesta -> 14533ms
+------------------------------------------------
+
+
+Solicitud 24 -> m3
+------------------------------------------------
+RAM disponible -> 0.4511375427246094GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 8
+Tiempo de respuesta -> 14374ms
+------------------------------------------------
+
+
+Solicitud 25 -> m1
+------------------------------------------------
+RAM disponible -> 0.4438972473144531GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 8
+Tiempo de respuesta -> 13679ms
+------------------------------------------------
+
+
+Solicitud 26 -> m2
+------------------------------------------------
+RAM disponible -> 0.4416847229003906GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 8
+Tiempo de respuesta -> 13677ms
+------------------------------------------------
+
+
+Solicitud 27 -> m3
+------------------------------------------------
+RAM disponible -> 0.4209747314453125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 7
+Tiempo de respuesta -> 11803ms
+------------------------------------------------
+
+
+Solicitud 28 -> m1
+------------------------------------------------
+RAM disponible -> 0.4205055236816406GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 7
+Tiempo de respuesta -> 11595ms
+------------------------------------------------
+
+
+Solicitud 29 -> m2
+------------------------------------------------
+RAM disponible -> 0.4033012390136719GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 7
+Tiempo de respuesta -> 11489ms
+------------------------------------------------
+
+
+Solicitud 30 -> m3
+------------------------------------------------
+RAM disponible -> 0.42548370361328125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 6
+Tiempo de respuesta -> 10929ms
+------------------------------------------------
+
+
+Solicitud 31 -> m1
+------------------------------------------------
+RAM disponible -> 0.42633056640625GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 6
+Tiempo de respuesta -> 10878ms
+------------------------------------------------
+
+
+Solicitud 32 -> m2
+------------------------------------------------
+RAM disponible -> 0.4126472473144531GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 6
+Tiempo de respuesta -> 10823ms
+------------------------------------------------
+
+
+Solicitud 33 -> m3
+------------------------------------------------
+RAM disponible -> 0.3881263732910156GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 5
+Tiempo de respuesta -> 9800ms
+------------------------------------------------
+
+
+Solicitud 34 -> m1
+------------------------------------------------
+RAM disponible -> 0.4257545471191406GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 5
+Tiempo de respuesta -> 9623ms
+------------------------------------------------
+
+
+Solicitud 35 -> m2
+------------------------------------------------
+RAM disponible -> 0.4398994445800781GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 5
+Tiempo de respuesta -> 9495ms
+------------------------------------------------
+
+
+Solicitud 36 -> m3
+------------------------------------------------
+RAM disponible -> 0.4314460754394531GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 4
+Tiempo de respuesta -> 8239ms
+------------------------------------------------
+
+
+Solicitud 37 -> m1
+------------------------------------------------
+RAM disponible -> 0.4018287658691406GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 4
+Tiempo de respuesta -> 7532ms
+------------------------------------------------
+
+
+Solicitud 38 -> m2
+------------------------------------------------
+RAM disponible -> 0.3879661560058594GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 4
+Tiempo de respuesta -> 7494ms
+------------------------------------------------
+
+
+Solicitud 39 -> m3
+------------------------------------------------
+RAM disponible -> 0.3868446350097656GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 3
+Tiempo de respuesta -> 7264ms
+------------------------------------------------
+
+
+Solicitud 40 -> m1
+------------------------------------------------
+RAM disponible -> 0.3322944641113281GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 3
+Tiempo de respuesta -> 6955ms
+------------------------------------------------
+
+
+Solicitud 41 -> m2
+------------------------------------------------
+RAM disponible -> 0.2717399597167969GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 3
+Tiempo de respuesta -> 6153ms
+------------------------------------------------
+
+
+Solicitud 42 -> m3
+------------------------------------------------
+RAM disponible -> 0.2674407958984375GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 2
+Tiempo de respuesta -> 6160ms
+------------------------------------------------
+
+
+Solicitud 43 -> m1
+------------------------------------------------
+RAM disponible -> 0.26743316650390625GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 2
+Tiempo de respuesta -> 6193ms
+------------------------------------------------
+
+
+Solicitud 44 -> m2
+------------------------------------------------
+RAM disponible -> 0.3230705261230469GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 2
+Tiempo de respuesta -> 5741ms
+------------------------------------------------
+
+
+Solicitud 45 -> m3
+------------------------------------------------
+RAM disponible -> 0.32270050048828125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 1
+Tiempo de respuesta -> 5526ms
+------------------------------------------------
+
+
+Solicitud 46 -> m1
+------------------------------------------------
+RAM disponible -> 0.3554649353027344GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 1
+Tiempo de respuesta -> 5477ms
+------------------------------------------------
+
+
+Solicitud 47 -> m2
+------------------------------------------------
+RAM disponible -> 0.35303497314453125GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 1
+Tiempo de respuesta -> 5441ms
+------------------------------------------------
+
+
+Solicitud 48 -> m3
+------------------------------------------------
+RAM disponible -> 0.3761711120605469GB
+Velocidad de procesamiento -> 2400MHZ
 Cantidad de procesos -> 0
-Tiempo de respuesta -> 5279ms
+Tiempo de respuesta -> 4260ms
+------------------------------------------------
+
+
+Solicitud 49 -> m1
+------------------------------------------------
+RAM disponible -> 0.3657646179199219GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 0
+Tiempo de respuesta -> 4144ms
+------------------------------------------------
+
+
+Solicitud 50 -> m2
+------------------------------------------------
+RAM disponible -> 0.3274650573730469GB
+Velocidad de procesamiento -> 2400MHZ
+Cantidad de procesos -> 0
+Tiempo de respuesta -> 3156ms
 ------------------------------------------------
