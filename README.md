@@ -1,12 +1,14 @@
 # Load balancer
-This is a didactical project that shows a load balancer that performas an action by choosing one from three gRPC microservices (all performing the same action) basing on the realtime performance level. In a logs.txt file there will be displayed the whole calculation of the balancer basing on data like free RAM, response time, etc. of each microservice.
+This is a didactical project about a simple implementation of a load balancer that is connected to three gRPC microservices, these connected to a Postgres database. 
 
-This is useful if 100 requests are sent at the same time. This can be done using a client emulator.
+A load balancer is useful when the server receives many requests in a short amount of time. To test this balancer, there was developed a client emulator that can send any number of requests at the same time.
 
 - [Tech stack](#tech-stack)
 - [Required installations](#required-installations)
 - [Commands](#commands)
 - [Environment variables](#environment-variables)
+- [How to test balancer](#how-to-test-balancer)
+- [Algorithm](#algorithm)
 
 ## Tech stack
 * [Node.js](https://nodejs.org)
