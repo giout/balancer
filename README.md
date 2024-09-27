@@ -5,12 +5,16 @@ A load balancer is useful when the server receives many requests in a short amou
 
 It is important to clarify that this project is developed to be tested in one computer, for it is a didactal project about load balancing and microservices.
 
+- [Demo](#demo)
 - [Tech stack](#tech-stack)
 - [Required installations](#required-installations)
 - [Environment variables](#environment-variables)
 - [How to test balancer](#how-to-test-balancer)
 - [Balancer algorithm](#balancer-algorithm)
 - [Client emulator algorithm](#cliente-emulator-algorithm)
+
+## Demo
+https://youtu.be/i2Co2rB6ygc
 
 ## Tech stack
 * [Node.js](https://nodejs.org)
