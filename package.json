@@ -7,7 +7,8 @@
     "start": "node ./src/index.js",
     "m1": "node ./m1/index.js",
     "m2": "node ./m2/index.js",
-    "m3": "node ./m3/index.js"
+    "m3": "node ./m3/index.js",
+    "client": "node ./client-emulator/index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.9.11",
     "@grpc/proto-loader": "^0.7.10",
+    "axios": "^1.7.7",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",

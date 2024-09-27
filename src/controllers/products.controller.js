@@ -45,6 +45,8 @@ const getProducts = async (req, res, next) => {
             // update logs table
             setService(service, data)
 
+            worker.terminate()
+
             res.status(200).json(response.products)
         })
     } catch (e) {

@@ -131,6 +131,6 @@ This is the process that occurs when one http request is sent to the server.
 - Server prints a new entry in logs.txt.
 
 ## Client emulator algorithm
-Client emulator consists on a logic block that is inside of a for loop of n (REQUESTS) iterations:
+Client emulator consists on a script that contains a for loop of n (REQUESTS) iterations, inside of this loop the next logic block is executed:
 - Create a worker.
 - Inside that worker, send a request to the server.
