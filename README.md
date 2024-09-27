@@ -96,7 +96,7 @@ $ npm run client
 Every request has its number according to the moment it was sent. For example: request 1 was sent before request 2. However, request 2 can finish before request 1. In logs.txt, requests are written when they are finished and there is a register of the microservice that took that request and the description of its resources the moment the request was made.
 
 Let's see an example: 
-
+```
 Request 23 -> m2
 ------------------------------------------------
 Free RAM -> 0.5025482177734375GB
@@ -113,7 +113,7 @@ CPU speed -> 2400MHZ
 Amount of current processes -> 15
 Response time -> 26046ms
 ------------------------------------------------
-
+```
 We can visualize that request 23 was finished before request 12, with the next details:
 - It was taken by microservice 2.
 - When microservice 2 took the request and made the SQL query, it had 2400MHZ of CPU speed, 0.50GB of free RAM, 15 processes running and it lasted 26046ms to perform the action.
