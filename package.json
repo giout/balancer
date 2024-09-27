@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "m1": "node ./m1/index.js",
+    "m2": "node ./m2/index.js",
+    "m3": "node ./m3/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,8 @@
     "@grpc/proto-loader": "^0.7.10",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "load-balancer": "file:",
+    "pg": "^8.13.0"
   }
 }

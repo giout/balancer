@@ -1,7 +1,7 @@
 // metodos para la escritura del archivo log
 const fs = require('fs')
 const path = require('path')
-const filePath = path.join(__dirname, '../balancing/logs.txt')
+const filePath = path.join(__dirname, '../logs.txt')
 
 const addLog = (request, service, data) => {
     const content = fs.readFileSync(filePath, 'utf-8')

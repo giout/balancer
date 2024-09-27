@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package productPackage;
+
+service ProductService {
+    rpc readProducts(NoParam) returns (Result) {}
+}
+
+message NoParam {}
+
+message Product {
+    string description = 1;
+    int64 id = 2;
+}
+
+message Data {
+    double ram = 1;
+    double cpu = 2;
+    bool error = 3;
+}
+
+message Result {
+    repeated Product products = 1;
+    Data performance = 2;
+}

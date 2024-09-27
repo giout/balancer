@@ -15,6 +15,7 @@ class ProductServiceCnn {
         return new Promise((resolve, reject)=>{
             client.readProducts({}, (err, response) => {
                 if (err) {
+                    console.log(err)
                     throw new Error('Service failed')
                 } 
                 resolve(response)
