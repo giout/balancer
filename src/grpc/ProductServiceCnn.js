@@ -2,14 +2,14 @@ const path = require('path')
 
 const protoFilePath = path.join(__dirname, 'proto/ProductService.proto') 
 
-// componente acoplado para generar una conexion a un especifico microservicio
+// component to generate a connection to a specific microservice
 class ProductServiceCnn {
     constructor(name, url){
         this.name = name
         this.url = url
     }
 
-    // el metodo debe ser envuelto en una promesa para que devuelva los datos correctamente
+    // method is wrapped in a promise to return data properly
     readProducts(){
         const client = this.newGrpcClient()
         return new Promise((resolve, reject)=>{

@@ -1,4 +1,4 @@
-// metodos para la escritura del archivo log
+// write logs.txt file
 const fs = require('fs')
 const path = require('path')
 const filePath = path.join(__dirname, '../logs.txt')
@@ -7,12 +7,12 @@ const addLog = (request, service, data) => {
     const content = fs.readFileSync(filePath, 'utf-8')
 
     const newContent = `\n
-Solicitud ${request} -> ${service}
+Request ${request} -> ${service}
 ------------------------------------------------
-RAM disponible -> ${data.ram}GB
-Velocidad de procesamiento -> ${data.cpu}MHZ
-Cantidad de procesos -> ${data.processes}
-Tiempo de respuesta -> ${data.time}ms
+Free RAM -> ${data.ram}GB
+CPU speed -> ${data.cpu}MHZ
+Amount of current processes -> ${data.processes}
+Response time -> ${data.time}ms
 ------------------------------------------------
 `
 

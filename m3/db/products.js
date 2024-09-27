@@ -1,10 +1,10 @@
-require('dotenv/config.js') // cargando variables de entorno
+require('dotenv/config.js')
 const pool = require('../config/database.js')
 
 const getProducts = async () => {
     let products = []
 
-    // realizando operacion del microservicio a cualquiera de las 3 tablas aleatorias
+    // executing microservice operation (read products) by querying a random table
     const tables = ['products', 'products2', 'products3']
     const index = Math.floor(Math.random() * tables.length)
 

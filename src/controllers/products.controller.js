@@ -11,27 +11,27 @@ const getProducts = async (req, res, next) => {
         requests++
         const requestNumber = requests
 
-        // se elige el microservicio
+        // choose microservice
         const service = chooseService()
 
-        // se inicia el proceso
+        // start execution
         let initial = new Date().getTime()
         addProcess(service)
 
-        // se inicia el worker        
+        // start worker        
         const worker = new Worker(path.join(__dirname, '../balancing/worker.js'))
         worker.postMessage(service)
 
         worker.on('message', (response) => {
             removeProcess(service)
 
-            // se obtiene y manipula la respuesta del microservicio
+            // obtain and manipulate microservice response
             const { ram, cpu, error } = response.performance
 
             if (error)
                 throw new CustomError('Service failed', 500)
 
-            // se recopilan los datos de rendimiento
+            // obtain performance data
             const data = {
                 ram,
                 cpu,
@@ -39,10 +39,10 @@ const getProducts = async (req, res, next) => {
                 time: new Date().getTime() - initial
             }
 
-            // se imprime el log
+            // print logs
             addLog(requestNumber, service, data)
 
-            // se actualiza la tabla
+            // update logs table
             setService(service, data)
 
             res.status(200).json(response.products)

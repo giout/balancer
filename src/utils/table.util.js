@@ -1,10 +1,10 @@
-// metodos para la manipulacion de table.js
 let table = require('../balancing/table.js')
 
+// methods to manipulate logs table
 const chooseService = () => {
     const points = { m1: 0, m2: 0, m3: 0 }
 
-    // se calculan los valores maximos/minimos
+    // calculate maximum and minimum values
     const maxRam = Math.max(
         table['m1'].ram,
         table['m2'].ram,
@@ -29,7 +29,7 @@ const chooseService = () => {
         table['m3'].time
     )
 
-    // se agregan los puntos
+    // set score
     for (const s of ['m1', 'm2', 'm3']) {
         if (table[s].ram == maxRam) 
             points[s] += 4
@@ -47,7 +47,7 @@ const chooseService = () => {
         }
     }
 
-    // se elige el que tenga mas puntos
+    // choose the one with the biggest score
     const { m1, m2, m3 } = points
     if (m1 >= m2 && m1 >= m3) 
         return 'm1'

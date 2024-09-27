@@ -1,9 +1,10 @@
-require('dotenv/config.js') // cargando variables de entorno
+require('dotenv/config.js') 
 
 const { ServerCredentials } = require('@grpc/grpc-js')
 const server = require('./config/server.js')
 
-// las credenciales son obligatorias para iniciar el servidor, en este caso, se optara por no tener credenciales seguras
+// credentials are a mandatory to start the server 
+// in this case, the project won't have secure credentials
 const credentials = ServerCredentials.createInsecure()
 const port = process.env.M2_PORT
 

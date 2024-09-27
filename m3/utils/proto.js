@@ -1,20 +1,22 @@
-// obtiene la ruta del archivo, el nombre del paquete y devuelve una referencia del buffer de protocolo manipulable
-
+// this method obtains file path, name of the proto package and returns a reference of the buffer
 const protoFile = (filePath, packageName) => {
     const grpc = require('@grpc/grpc-js')
 
-    // compila los archivos proto para poder definir el esquema de transferencia
+    // compile proto file to define communication scheme
     const proto = require('@grpc/proto-loader')
+    // load file
     const protoFile = proto.loadSync(filePath, {
         keepCase: true,
         longs: String,
         enums: String,
         defaults: true,
         oneofs: true
-    }) // carga archivo
-    const protoBuffer = grpc.loadPackageDefinition(protoFile) // parsea de archivo a objeto
+    }) 
+    // parse file to object
+    const protoBuffer = grpc.loadPackageDefinition(protoFile) 
     
-    return protoBuffer[packageName] // extrae package
+    // obtain proto package
+    return protoBuffer[packageName] 
 }
 
 module.exports = { protoFile }

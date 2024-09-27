@@ -14,12 +14,12 @@ const readProducts = async (call, callback) => {
 
     } finally {
         let performance = {
-            ram: getFreeRam(), // memoria libre (GB)
-            cpu: getCpuSpeed(), // velocidad de cpu (MHZ)
+            ram: getFreeRam(), // free memory (GB)
+            cpu: getCpuSpeed(), // CPU speed (MHZ)
             error
         } 
 
-        // enviando respuesta
+        // send response
         callback(null, { 
             products,
             performance

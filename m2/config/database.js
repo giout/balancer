@@ -1,4 +1,4 @@
-require("dotenv/config.js"); // cargando variables de entorno
+require("dotenv/config.js");
 
 const { Pool } = require("pg");
 
