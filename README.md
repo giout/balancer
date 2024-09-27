@@ -1,5 +1,5 @@
 # Load balancer
-This is a didactical project about a simple implementation of a load balancer that is connected to three gRPC microservices, these connected to a Postgres database. Balancer receives an http request at the corresponding endpoint and it must execute a SELECT query, but instead of doing it itself, it chooses between the three microservices to perform the action basing on their performance.
+This is a didactical project about a simple implementation of a load balancer that is connected to three gRPC microservices, these connected to a Postgres database. Balancer receives an http request at the corresponding endpoint and it must execute a SELECT query, but instead of doing it itself, it chooses between the three microservices to perform the action basing on their performance. The history of all requests and the performance of the chosen microservice to each one of them will be printed in a txt file.
 
 A load balancer is useful when the server receives many requests in a short amount of time. To test this balancer, there was developed a client emulator that can send any number of requests at the same time.
 
