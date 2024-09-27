@@ -70,16 +70,4 @@ Environment variables should be added to a .env in the root directory, following
 <td>M3_PORT</td>
 <td>Microservice 1 listening port</td>
 </tr>
-<tr>
-<td>M1</td>
-<td>Microservice 1 URL to which the balancer will send the gRPC request</td>
-</tr>
-<tr>
-<td>M2</td>
-<td>Microservice 2 URL to which the balancer will send the gRPC request</td>
-</tr>
-<tr>
-<td>M3</td>
-<td>Microservice 3 URL to which the balancer will send the gRPC request</td>
-</tr>
 </table>
